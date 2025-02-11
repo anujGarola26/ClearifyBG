@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Roboto", serif;
+    height: 100%;
+    width: 100%;
+}
+.logo {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(35, 34, 34);
+}
+.logo h1 {
+    color: wheat;
+}
+#logo-img {
+    height: 80px;
+    width: 80px;
+}
+main {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.container-one {
+    height: 300px;
+    max-width: 400px;
+    width: 90%;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.container-two {
+    height: 500px;
+    max-width: 400px;
+    width: 90%;
+    /* background-color: rgb(39, 37, 37); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    /* box-shadow: 3px 3px 5px rgb(59, 59, 59); */
+    flex-direction: column;
+    gap: 20px;
+}
+.images {
+    height: 300px;
+    width: 400px;
+    background-image: url("transparent1.jpg");
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgb(59, 59, 59);
+    border-radius: 20px;
+}
+#img1 {
+    width: 400px;
+    animation: bgRemove 15s linear infinite ;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#with-bg {
+    width: 400px;
+    height: 300px;
+}
+#img2 {
+    width: 400px;
+    position: absolute;
+    height: unset;
+
+}
+#without-bg {
+    width: 400px;
+    height: 300px;
+}
+.text {
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgb(239, 237, 237), rgb(74, 74, 78), rgb(243, 133, 133), rgb(23, 9, 9));
+    text-align: center;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.upload {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(39, 37, 37);
+    box-shadow: 3px 3px 5px rgb(59, 59, 59);
+    border-radius: 20px;
+}
+.inner-upload {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-size: 23px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(36, 30, 30);
+    border-radius: 20px;
+    box-shadow: -3px -3px 5px rgb(59, 59, 59);
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+.inner-upload:hover {
+    background-color: rgb(26, 40, 40);
+
+}
+#import-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.fa-solid {
+    color: aliceblue;
+    margin-bottom: 10px;
+    font-size: 2.4rem; 
+    transform: translateY(-140px);
+
+}
+#span {
+    background: linear-gradient(to bottom, rgb(237, 231, 231), rgb(203, 203, 204), rgb(175, 174, 176));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-100px);
+}    
+#upload-btn {
+    height: 40px;
+    width: 120px;
+    color: aqua;
+    background: linear-gradient(to left, rgb(123, 123, 230), rgb(67, 64, 117), rgb(83, 83, 88), rgb(26, 2, 64));
+    border-radius: 20px;
+    cursor: pointer;
+}
+#upload-btn:hover {
+    background: linear-gradient(to left,rgb(26, 2, 64), rgb(83, 83, 88),rgb(67, 64, 117), rgb(123, 123, 230));
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(31, 30, 30);
+    height: 50px;
+}
+.caption {
+    color: #fff;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+#span1 {
+    padding: 0 10px;
+    background: linear-gradient(to bottom, rgb(237, 231, 231), rgb(203, 203, 204), rgb(175, 174, 176));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.result {
+     width: 50%;
+     height: 400px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     display: none ;
+     border-radius: 20px;
+     flex-direction: column;
+     gap: 30px;
+}
+.box {
+    height: 400px;
+    width: 400px;
+    background-image: url('transparent1.jpg');
+    position: relative;
+    border-radius: 20px;
+}
+.img1 {
+    height: 400px;
+    width: 0px; 
+    animation: remove 6s linear 1 ;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: -3px -3px 5px rgb(59, 59, 59);
+}
+.img1 img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+.img2 {
+    /* height: 400px; */
+    width: 400px; 
+    top: 0;
+    border-radius: 20px;
+    position: absolute;
+}
+.img2 img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    /* transform: translateX(-10px); */
+}
+
+#loading {
+    background-blend-mode: color-burn;
+    height: 80px;
+    border-radius: 100%;
+    filter: drop-shadow(2px 2px 5px grey);
+    display: none;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#download {
+    height: 40px;
+    width: 120px;
+    color: aqua;
+    background: linear-gradient(to left, rgb(123, 123, 230), rgb(67, 64, 117), rgb(83, 83, 88), rgb(26, 2, 64));
+    border-radius: 20px;
+    cursor: pointer;
+}
+#download:hover {
+    background: linear-gradient(to left,rgb(26, 2, 64), rgb(83, 83, 88),rgb(67, 64, 117), rgb(123, 123, 230));
+}
+#reset {
+    height: 40px;
+    width: 120px;
+    color: aqua;
+    background: linear-gradient(to left, rgb(123, 123, 230), rgb(67, 64, 117), rgb(83, 83, 88), rgb(26, 2, 64));
+    border-radius: 20px;
+    cursor: pointer;
+}
+#reset:hover {
+    background: linear-gradient(to left,rgb(26, 2, 64), rgb(83, 83, 88),rgb(67, 64, 117), rgb(123, 123, 230));
+}
+@keyframes bgRemove {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes remove {
+    0% {
+        width: 400px;
+    }
+    100% {
+        width: 0px;
+    }
+}
